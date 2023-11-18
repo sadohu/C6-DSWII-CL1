@@ -9,13 +9,9 @@ public class HilosPrincipal {
 		HilosOpciones hilos4 = new HilosOpciones(4);
 		
 		hilos1.start();
-		Thread.sleep(10);
-		hilos2.start();
-		Thread.sleep(10);
-		hilos3.start();
-		Thread.sleep(10);
-		hilos4.start();
-		Thread.sleep(10);
+		//hilos2.start();
+		//hilos3.start();
+		//hilos4.start();
 	}
 
 }
