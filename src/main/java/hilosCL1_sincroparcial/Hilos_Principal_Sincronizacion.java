@@ -3,13 +3,13 @@ package hilosCL1_sincroparcial;
 public class Hilos_Principal_Sincronizacion {
 
 	public static void main(String[] args) throws InterruptedException {
-		Hilos_sincronizacionI sincronizacionI = new Hilos_sincronizacionI();
-		Hilos_sincronizacionII sincronizacionII = new Hilos_sincronizacionII();
-		Hilos_sincronizacionIII sincronizacionIII = new Hilos_sincronizacionIII();
-		Hilos_sincronizacionIV sincronizacionIV = new Hilos_sincronizacionIV();
-		Hilos_sincronizacionV sincronizacionV = new Hilos_sincronizacionV();
-		Hilos_sincronizacionVI sincronizacionVI = new Hilos_sincronizacionVI();
-		Hilos_sincronizacionVII sincronizacionVII = new Hilos_sincronizacionVII();
+		Thread sincronizacionI = new Thread(new Hilos_sincronizacionI());
+		Thread sincronizacionII =  new Thread(new Hilos_sincronizacionII());
+		Thread sincronizacionIII =  new Thread(new Hilos_sincronizacionIII());
+		Thread sincronizacionIV =  new Thread(new Hilos_sincronizacionIV());
+		Thread sincronizacionV =  new Thread(new Hilos_sincronizacionV());
+		Thread sincronizacionVI =  new Thread(new Hilos_sincronizacionVI());
+		Thread sincronizacionVII =  new Thread(new Hilos_sincronizacionVII());
 
 		sincronizacionI.start();
 		Thread.sleep(100);

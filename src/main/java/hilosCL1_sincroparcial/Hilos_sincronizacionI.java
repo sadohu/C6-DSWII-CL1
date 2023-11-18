@@ -1,15 +1,18 @@
 package hilosCL1_sincroparcial;
 
-public class Hilos_sincronizacionI extends Thread implements Runnable{
+public class Hilos_sincronizacionI implements Runnable{
 
 	public void run() {
 		for(int i = 1; i <= 7; i++){
-			System.out.println(i + ": Soy Emprendedor 7");
-			try {
-				Hilos_sincronizacionI.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+			synchronized(this){
+				System.out.println("1 Soy Emprendedor 7");
+				try {
+					this.wait(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
+			
 		}
 	}
 
