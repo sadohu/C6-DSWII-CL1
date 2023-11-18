@@ -55,9 +55,9 @@ public class HilosOpciones extends Thread{
 	}
 	
 	private void opcion4(){
-		Thread alberto = new Alberto();
-		Thread martin = new Martin();
-		Thread ricardo = new Ricardo();
+		Alberto alberto = new Alberto();
+		Martin martin = new Martin();
+		Ricardo ricardo = new Ricardo();
 		try {
 			alberto.run();
 			Thread.sleep(10);
