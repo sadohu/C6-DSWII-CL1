@@ -10,7 +10,7 @@ public class Cliente {
 	
 	public static void main(String[] args) throws ClassNotFoundException {
 		try {
-			Socket client = new Socket("localhost", 4500);
+			Socket client = new Socket("localhost", 4780);
 			ObjectOutputStream request = new ObjectOutputStream(client.getOutputStream());
 			request.writeObject("Hola Servidor, consulta ¿Quién fue el presidente del Perú en 1844?");
 			System.out.println("Solicitud enviada.");

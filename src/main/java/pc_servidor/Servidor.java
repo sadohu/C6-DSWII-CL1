@@ -10,7 +10,7 @@ public class Servidor {
 
 	public static void main(String[] args) throws ClassNotFoundException {
 		try {
-			ServerSocket server = new ServerSocket(4500);
+			ServerSocket server = new ServerSocket(4780);
 			System.out.println("Servivor a la espera de peticiones.");
 			Socket client = server.accept();
 			
