@@ -18,6 +18,10 @@ public class HilosOpciones extends Thread{
 			break;
 		case 3:
 			opcion3();
+			break;
+		case 4:
+			opcion4();
+			break;
 		default:
 			break;
 		}
@@ -49,4 +53,20 @@ public class HilosOpciones extends Thread{
 			terminoSerie = (terminoSerie * terminoSerie) + 1;
 		}
 	}
+	
+	private void opcion4(){
+		Thread alberto = new Alberto();
+		Thread martin = new Martin();
+		Thread ricardo = new Ricardo();
+		try {
+			alberto.run();
+			Thread.sleep(10);
+			martin.run();
+			Thread.sleep(10);
+			ricardo.run();
+			Thread.sleep(10);
+		} catch (Exception e) {
+		}
+	}
+	
 }
