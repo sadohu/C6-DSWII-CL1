@@ -16,6 +16,8 @@ public class HilosOpciones extends Thread{
 		case 2:
 			opcion2();
 			break;
+		case 3:
+			opcion3();
 		default:
 			break;
 		}
@@ -37,6 +39,14 @@ public class HilosOpciones extends Thread{
 	private void opcion2(){
 		for (char i = 'a'; i <= 'z' ; i++) {
 			System.out.println("Opción 2: " + i);
+		}
+	}
+	
+	private void opcion3(){
+		int terminoSerie = 1;
+		while(terminoSerie <= 1000){
+			System.out.println("Opción 3: " + terminoSerie);
+			terminoSerie = (terminoSerie * terminoSerie) + 1;
 		}
 	}
 }
